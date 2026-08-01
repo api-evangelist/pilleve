@@ -1,7 +1,28 @@
 aid: pilleve
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pilleve.png
 name: Pilleve
-description: Pilleve is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Pilleve is a medication-compliance and controlled-substance monitoring
+  company in the digital health space. Its Amethyst System pairs a smart
+  pill-dispensing device that releases one pill at a time and detects
+  tampering with a patient mobile app and a clinician portal for real-time
+  monitoring, adherence tracking, diversion prevention, compliance
+  documentation, and medication disposal. Pilleve serves hospital systems,
+  pain clinics, and pharmacies, and was surfaced as a 500 Global portfolio
+  company and added to the API Evangelist network as a lead. As of this
+  enrichment pass Pilleve publishes a marketing website and a clinician
+  login but exposes no public API, developer portal, or documentation.
 url: https://raw.githubusercontent.com/api-evangelist/pilleve/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Digital Health
+- Healthcare
+- Medication Adherence
+- Controlled Substances
+- Patient Monitoring
+- Medical Devices
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pilleve-domain-security.yml
 - type: Website
   url: https://pilleve.com
+- type: Login
+  url: https://www.pilleve.com/5b122e03-f503-4a52-89dd-e9b2fbfbe1e4
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
